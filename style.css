@@ -1,0 +1,158 @@
+.container{
+	background-color: #ececec;
+	margin: 20px auto;
+	padding: 15px;
+}
+.main-grid{
+	display: grid;
+	grid-template-columns: 20% 78%;
+	grid-column-gap: 2%;
+	grid-row-gap: 20px;
+}
+
+.left-div p{
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+.left-div span{
+	border-bottom: 1px solid lightgrey;
+	font-size: 13px;
+    padding: 10px 26px 0px;
+    display: block;
+}
+
+.year-div{
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-column-gap: 10%;
+	grid-row-gap: 20px;
+	margin-top: 10px;
+}
+
+.year-div input{
+	background-color: lightgreen;
+	border-radius: 5px;
+	border:none;
+	}
+
+.year-div input.active{
+	background-color: #64bb64;
+}
+
+.year-div button{
+	background-color: lightgreen;
+	border-radius: 5px;
+	border:none;
+	}
+
+.year-div button.active{
+	background-color: #64bb64;
+}
+
+.right-grid{
+	display: grid;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-column-gap: 1.33%;
+	grid-row-gap: 20px;
+}
+
+img{
+	max-width: 80%;
+	margin: auto;
+}
+
+.right-grid span{
+	display: block;
+	font-size: 14px;
+	color: blue;
+	margin-bottom: 5px;
+}
+
+.card-section{
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+	height: 380px;
+}
+
+.img-div{
+	background-color: #ececec;
+	text-align: center;
+	padding: 5px;
+}
+
+.card-section p{
+	margin-bottom: 5px;
+	color: blue;
+	font-size: 14px;
+}
+
+.card-section p b{
+	color: black;
+}
+
+.second-left{
+	background-color: white;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+}
+
+.devoloper{
+	text-align: center;
+	margin: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+	 .right-grid{
+		display: grid;
+		grid-template-columns: 24% 24% 24% 24%;
+		grid-column-gap: 1.33%;
+		grid-row-gap: 20px;
+	}
+}
+
+
+
+@media only screen and (max-width:1024px) {
+	 .right-grid{
+		display: grid;
+		grid-template-columns: 48% 48%;
+    	grid-column-gap: 4%;
+		grid-row-gap: 20px;
+	}
+	.main-grid{
+	display: grid;
+	grid-template-columns: 30% 68%;
+	grid-column-gap: 2%;
+	grid-row-gap: 20px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  .right-grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 0%;
+	grid-row-gap: 20px;
+}
+.left-grid{
+	padding:15px 30px !important;
+}
+.main-grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 0%;
+	grid-row-gap: 20px;
+padding:15px 20px !important;
+}
+
+}
+
+ul{
+	margin-bottom: 0px !important;
+	font-size: 14px;
+	color: blue;
+}
